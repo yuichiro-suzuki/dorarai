@@ -1,0 +1,21 @@
+<div class="sidebor">
+<ul class="nav nav-tabs nav-justified">
+	<li role="presentation" class="active"><a href="#">非公式大会参加</a></li>
+	<li role="presentation"><a href = "/static_pages/home_b" %>非公式大会募集</a></li>
+	<li role="presentation"><a href="/static_pages/home_c">２Pick</a></li>
+  <li role="presentation"><a href="/static_pages/home_d">フリーマッチ</a></li>
+</ul>
+<!-- 日付による昇順降順昨日の追加-->
+   <div class="date"><%= I18n.l Date.today, :format => :long %></div>
+	  <div class="row ">
+			<aside class="col-sm-8">
+       <ol class="microposts">
+         <%= render @microposts %>
+       </ol>
+			 <div class="page"><%= paginate @microposts %></div>
+			</aside>
+			<div class="col-sm-4">
+        <%= render 'shared/micropost_hot' %>
+			</div>
+	  </div>
+</div>
