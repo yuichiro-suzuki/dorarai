@@ -4,10 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
-
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -18,9 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 #gem 'rails-i18n', '~> 3.0.0'
 # Use jquery as the JavaScript library
-
 gem 'jquery-turbolinks'
-
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 #gem 'turbolinks'
@@ -45,14 +41,12 @@ gem 'twitter-bootstrap-rails' # Bootstrapの本体
  gem 'kaminari-bootstrap', '~> 3.0.1'
 
 
-
  gem 'cloudinary'
 
  ## twitter api 関連 ##
  gem 'twitter'
  gem 'oauth'
  gem 'omniauth-twitter'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

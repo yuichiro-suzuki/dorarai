@@ -2,7 +2,12 @@
 @import "bootstrap";
 
 /* universal */
-
+@media screen and (max-width: 640px) {
+	img {
+		width: 320px;
+		height: 160px;
+	}
+}
 body {
   padding-top: 0px;
   background-color: #EEEEEE;
@@ -56,6 +61,8 @@ textarea {
   padding-right: 400px;
   text-decoration: none;
 }
+
+div :hover { text-decoration: none;}
 .tit {
   top-margin: 0;
   font-size:23px;
@@ -79,6 +86,17 @@ hr {
   font-size:24px;
   border-width: medium ;
 }
+@media only screen and (max-device-width: 480px) {
+ /* スマホ用のCSS */
+ .sidebor {
+   /*  画面縦幅　*/
+   height:5000px;
+   border-style : solid;
+   border-color: #cccccc;
+   background-color: #FFFFFF;
+   margin-bottom: 100px;
+ }
+}
 .sidebor {
   /*  画面縦幅　*/
   height:5000px;
@@ -86,6 +104,7 @@ hr {
   border-color: #cccccc;
   background-color: #FFFFFF;
   margin-bottom: 100px;
+  
 }
 .page {
   padding-left:30px;
@@ -161,6 +180,7 @@ aside {
       margin-top: 10px;
       float:right;
       padding-right: 600px;
+
     }
   }
 }
@@ -180,14 +200,21 @@ aside {
   font-size:1.8em;
   margin-bottom: 10px;
 }
+
 .count {
   font-size:1.4em;
+}
+.inf {
+  margin-top: 50px;
 }
 /* home 大会参加　*/
 .date {
   padding-top: 10px;
   font-size:0.8em;
   float: right;
+}
+.kakin {margin-top: 15px;
+        font-size:1.3em;
 }
 /* microposts */
 
@@ -234,6 +261,7 @@ aside {
   font-size: 1.2em;
 }
 
+
 h2 {
   font-size: 18px;
   color:red;
@@ -272,7 +300,11 @@ h2 {
     margin-top: 5px;
   }
 }
-
+ h5 {
+   float: right;
+   font-size: 25px;
+   margin-right: 550px;
+ }
 /* 投稿の見本ページ  */
  h3 {
   font-size: 25px;

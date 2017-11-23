@@ -14,7 +14,7 @@ class MicropostsController < ApplicationController
     num = (params["micropost"]["content"]).length
 #binding.pry
       # Twitter投稿
-     if num <= 146
+     if num <= 146 &&  1 <= num
        @client.update(params["micropost"]["content"])
      end
 
